@@ -8,7 +8,8 @@ const http = require('http');
 const InjectLiveReload = require('../index');
 process.env = {
   EMBER_CLI_INJECT_LIVE_RELOAD_BASEURL : 'test/',
-  EMBER_CLI_INJECT_LIVE_RELOAD_PORT: 4200
+  EMBER_CLI_INJECT_LIVE_RELOAD_PORT: 4200,
+  EMBER_CLI_INJECT_LIVE_RELOAD_CSP_NONCE: null
 }
 
 describe('contenFor returns', () => {
